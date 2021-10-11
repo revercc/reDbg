@@ -1,0 +1,448 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 761, 360
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "reDbg"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 231, 237
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "关于"
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    LTEXT           "版本：1.0.01",IDC_STATIC,34,148,74,11
+    GROUPBOX        "reDbg",IDC_STATIC,3,130,225,99,BS_CENTER
+    LTEXT           "程序由  c/c++ 编写",IDC_STATIC,34,187,132,8
+    LTEXT           "版权所有（C）2020-2022年 镇北看雪",IDC_STATIC,34,168,148,8
+    LTEXT           "我的邮箱：2535836763@qq.com",IDC_STATIC,34,205,126,8
+    CONTROL         IDB_BITMAP1,IDC_STATIC,"Static",SS_BITMAP,0,0,231,120
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 491, 280
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CHILD | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME | WS_GROUP | WS_TABSTOP
+EXSTYLE WS_EX_LEFTSCROLLBAR
+CAPTION "CPU"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,7,353,172
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,179,353,94
+    CONTROL         "",IDC_LIST5,"SysListView32",LVS_REPORT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,360,7,124,172
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,360,179,124,94
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 311, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查找内存"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "查找",IDOK,254,52,50,14
+    LTEXT           "地址：",IDC_STATIC,14,29,27,8
+    EDITTEXT        IDC_EDIT2,51,26,241,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 311, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "内存断点"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,254,95,50,14
+    LTEXT           "开始地址：",IDC_STATIC,32,26,44,8
+    LTEXT           "大小：",IDC_STATIC,32,54,27,8
+    EDITTEXT        IDC_EDIT1,88,23,168,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,88,53,168,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG6 DIALOGEX 0, 0, 355, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "硬件断点"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,89,27,165,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,89,57,165,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT4,89,91,165,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,89,119,165,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "断点1：",IDC_STATIC,29,30,31,8
+    PUSHBUTTON      "删除",IDC_BUTTON1,268,27,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON2,269,57,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON3,268,91,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON4,269,120,50,14
+    LTEXT           "断点2：",IDC_STATIC,29,60,31,8
+    LTEXT           "断点3：",IDC_STATIC,29,93,31,8
+    LTEXT           "断点4：",IDC_STATIC,29,121,31,8
+    PUSHBUTTON      "确定",IDC_BUTTON5,146,148,50,14
+END
+
+IDD_DIALOG7 DIALOGEX 0, 0, 311, 102
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "内存断点"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,105,14,82,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "地址：",IDC_STATIC,31,19,27,8
+    LTEXT           "大小：",IDC_STATIC,30,42,27,8
+    LTEXT           "属性：",IDC_STATIC,30,69,27,8
+    EDITTEXT        IDC_EDIT3,105,38,82,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT4,106,66,81,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG8 DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,199,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,253,156,50,14
+END
+
+IDD_DIALOG9 DIALOGEX 0, 0, 524, 248
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "附加到进程"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,7,510,234
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 754
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 353
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        VERTGUIDE, 34
+        BOTTOMMARGIN, 230
+        HORZGUIDE, 172
+        HORZGUIDE, 187
+        HORZGUIDE, 205
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 484
+        VERTGUIDE, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 273
+        HORZGUIDE, 179
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        VERTGUIDE, 32
+        VERTGUIDE, 88
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        VERTGUIDE, 29
+        VERTGUIDE, 89
+        VERTGUIDE, 254
+        VERTGUIDE, 269
+        VERTGUIDE, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_DIALOG7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        VERTGUIDE, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+        HORZGUIDE, 14
+        HORZGUIDE, 27
+        HORZGUIDE, 38
+        HORZGUIDE, 42
+        HORZGUIDE, 66
+        HORZGUIDE, 77
+        HORZGUIDE, 80
+    END
+
+    IDD_DIALOG8, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG9, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 517
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG3 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG4 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG5 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG6 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG7 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG8 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG9 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "文件(F)"
+    BEGIN
+        MENUITEM "打开",                          ID_40001
+        MENUITEM "附加",                          ID_40002
+        MENUITEM "退出",                          ID_40003
+    END
+    POPUP "视图(V)"
+    BEGIN
+        MENUITEM "反汇编窗口",                       ID_40007
+        MENUITEM "查看内存(T)\tCtrl + F",           ID_40033
+    END
+    POPUP "调试(D)"
+    BEGIN
+        MENUITEM "运行(S)\tF5",                   ID_Menu
+        MENUITEM "单步步入(T)\tF7",                 ID_40011
+        MENUITEM "单步步过(W)\tF8",                 ID_40012
+        MENUITEM "结束调试(E)",                     ID_40017
+        MENUITEM SEPARATOR
+        MENUITEM "硬件断点",                        ID_40050
+        POPUP "内存断点"
+        BEGIN
+            MENUITEM "删除",                          ID_40052
+            MENUITEM "查看",                          ID_40053
+        END
+    END
+    POPUP "扩展(X)"
+    BEGIN
+        MENUITEM "反反调试",                        ID_40032
+    END
+    POPUP "帮助(H)"
+    BEGIN
+        MENUITEM "帮助\tCrty+F1",                 ID_40004
+        MENUITEM "关于",                          ID_40005
+    END
+END
+
+IDR_MENU2 MENU
+BEGIN
+    POPUP "子菜单"
+    BEGIN
+        MENUITEM "硬件执行",                        ID_40018
+        POPUP "硬件访问"
+        BEGIN
+            MENUITEM "BYTE",                        ID_40021
+            MENUITEM "WORD",                        ID_40022
+            MENUITEM "DWORD",                       ID_40023
+            MENUITEM "DWORD-2",                     ID_40027
+        END
+        POPUP "硬件写入"
+        BEGIN
+            MENUITEM "BYTE",                        ID_40024
+            MENUITEM "WORD",                        ID_40025
+            MENUITEM "DWORD",                       ID_40026
+            MENUITEM "DWORD-2",                     ID_40028
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "条件断点",                        ID_40031
+    END
+    POPUP "子菜单2"
+    BEGIN
+        POPUP "硬件访问断点"
+        BEGIN
+            MENUITEM "BYTE",                        ID_40042
+            MENUITEM "WORD",                        ID_40043
+            MENUITEM "DWORD",                       ID_40044
+            MENUITEM "DWORD-2",                     ID_40045
+        END
+        POPUP "硬件写入断点"
+        BEGIN
+            MENUITEM "BYTE",                        ID_40046
+            MENUITEM "WORD",                        ID_40047
+            MENUITEM "DWORD",                       ID_40048
+            MENUITEM "DWORD-2",                     ID_40049
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "内存访问",                        ID_40039
+        MENUITEM "内存写入",                        ID_40040
+        MENUITEM SEPARATOR
+        MENUITEM "条件断点",                        ID_40041
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "reDbg.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "re.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS
+BEGIN
+    VK_F7,          ID_40011,               VIRTKEY, NOINVERT
+    VK_F8,          ID_40012,               VIRTKEY, NOINVERT
+    "F",            ID_40033,               VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_Menu,                VIRTKEY, NOINVERT
+    VK_F1,          ID_40004,               VIRTKEY, CONTROL, NOINVERT
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
